@@ -1,25 +1,26 @@
-﻿namespace Selectionstatements
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+namespace SoloLearn
 {
-    class Program
-    {
-        public static void Main()
-        {
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			int a = 17;
+			int b = 4;
 
-            int a = 17;
-            int b = 4;
+			int quotient = a / b;
+			int remainder = a % b;
 
-            int quotient = a / b;
+			if (a == 17 && b == 4) ;
 
-            int mod = a % b;
+			Console.WriteLine($"{a}/{4} is {quotient} remainder {remainder}");
 
-            if (a == 17 && b == 4) ;
-
-            Console.WriteLine($"{a}/{b} is {b} remainder {mod} ");
-        }
-
-
-
-
-    }
-
+		}
+	}
 }
