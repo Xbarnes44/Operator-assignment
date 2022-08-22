@@ -21,6 +21,25 @@ namespace SoloLearn
 
 			Console.WriteLine($"{a}/{4} is {quotient} remainder {remainder}");
 
+			//Area of a circle Exercise 2
+
+			Console.WriteLine("What is the radius of the circle");
+
+			double realRadius;
+			var radius = double.TryParse(Console.ReadLine(), out realRadius);
+
+			var areaOfCircle = AreaOfCircle (realRadius);
+
+			Console.WriteLine($"The area of the circle with the radius of {realRadius} is {areaOfCircle}");
+
 		}
+
+			 public static double AreaOfCircle (double radius) 
+		{
+		
+			return Math.PI * radius * radius;
+		
+		}
+        
 	}
 }
